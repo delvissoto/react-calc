@@ -17,21 +17,21 @@ class Calculator extends React.Component {
     }
 
     changeHandler(value) {
-        var temp = this.state.expression + value;
         this.setState({
-            expression: temp
+            expression: this.state.expression + value
         });
     }
 
     evalThis(){
+        var result = eval(this.state.expression);
         this.setState({
-            result: eval(this.state.expression),
-            expression: ""
+            result: result,
+            expression: result
         });
     }
 
     clearHandler(){
-        var expr = this.state.expression;
+        var expr = (this.state.expression == this.state.result) ? "" : this.state.expression;
         this.setState({
             expression: (expr.substring(0, (expr.length - 1))),
             result: 0
