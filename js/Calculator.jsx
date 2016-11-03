@@ -56,7 +56,7 @@ class Calculator extends React.Component {
                         </tr>
                     <tr>
                         <td><CButton text="4" value="4" type="arg" onClick={this.changeHandler}></CButton></td>
-                        <td><CButton text="5" value="5" type="ar g" onClick={this.changeHandler}></CButton></td>
+                        <td><CButton text="5" value="5" type="arg" onClick={this.changeHandler}></CButton></td>
                         <td><CButton text="6" value="6" type="arg" onClick={this.changeHandler}></CButton></td>
                         <td><CButton text="&#215;" value="*" type="opt" onClick={this.changeHandler}></CButton></td>
                     </tr>
