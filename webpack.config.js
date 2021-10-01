@@ -11,15 +11,14 @@ var config = {
         port: 8080
     },
 
-    module: {
+   module: {
         loaders: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel',
-
-                query: {
-                    presets: ['es2015', 'react']
+                loader: "babel-loader",
+                options: {
+                    presets: ['react']
                 }
             }
         ]
